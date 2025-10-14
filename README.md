@@ -12,7 +12,7 @@ In particular, create a tensor with values from 0 to 11, then reshape this seque
 
 ## Exercise 1.2
 
-Create a `torch` 32-bit floating point tensor `T0`   that holds a sequence of integers from `0` to `16*3*3` and reshape that tensor to shape `(16,3,3)`. Then, create a second tensor `T1` which is `T0` multiplied by 3. Finally, use `torch.matmul` to multiply all 16 3x3 matrices from `T0` with the 16 3x3 matrices in `T1` and return the result where all `3*3` matrices are *summed up*. Implement the functionality within `assignment_ex2`.
+Create a `torch` 32-bit floating point tensor `T0`   that holds a sequence of integers from `0` to `16*3*3` and reshape that tensor to shape `(16,3,3)`. Then, create a second tensor `T1` which is `T0` multiplied by 3. Finally, use `torch.matmul` to multiply all 16 3x3 matrices from `T0` with the 16 3x3 matrices in `T1` and finally return the sum of the `3*3` matrices, i.e., 16 scalar's (e.g., where the first scalar is the elementwise sum of the first `3*3` matrix, and so on). Implement the functionality within `assignment_ex2`.
 
 ## Exericse 1.3
 

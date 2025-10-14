@@ -10,7 +10,7 @@ from einops import rearrange
 # Exercise 1.1
 def assignment_ex1() -> torch.Tensor:
     # YOUR CODE GOES HERE
-    pass
+    return torch.rand(3,3)
     
 # Exercise 1.2
 def assignment_ex2() -> torch.Tensor:
