@@ -18,8 +18,8 @@ def assignment_ex2() -> torch.Tensor:
     T0 = torch.arange(16*3*3, dtype=torch.float32)
     T0 = rearrange(T0, '(c h w) -> c h w', c=16, h=3, w=3)
     T1 = T0 * 3
-    T2 = torch.matmul(T0, T1).sum(dim=0)
-    return T2 # test fails? but its prolly correct
+    T2 = torch.matmul(T0, T1).sum(dim=(-2,-1))
+    return T2 # it wasnt correct
 
 
 # Exercice 1.3
